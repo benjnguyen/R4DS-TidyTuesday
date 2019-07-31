@@ -15,4 +15,5 @@ https://public.tableau.com/profile/benjamin3862#!/vizhome/MediaFranchisesCoordFl
 
 Functionally, the legend filter works like ggplotly's legend filter -- which is not exactly intuitive.
 Plotly's interactive legend does what I would expect -- it collapses the stacked bars onto its respective axis.
-The plotly graph can be seen in the shiny application 'Franchise-Shiny'.
+The plotly graph can be seen in the shiny application 'Franchise-Shiny'. However, in Tableau, if the 'exclude' option
+is used, it will re-calculate the graphs, filtering for the remaining revenue streams. I still have to figure that out in ggplot and plotly, but admittedly it is a very handy feature.
