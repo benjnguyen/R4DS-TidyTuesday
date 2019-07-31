@@ -71,31 +71,31 @@ ui <- fluidPage(
 server <- function(input, output) {
     
     output$summary<-renderUI({
-            helpText("On r/dataisbeautiful, reddit user /u/takeasecond 
-                     posted a visualization on the highest grossing media franchises
-                     using data scraped from wikipedia. Following soon after,
-                     the R4DS online community posted the data set for their
-                     TidyTuesday, a weekly project aimed at making useful visualizations
-                     using ggplot, tidyr, dplyr, and other tools within the tidyverse ecosystem.
-                     David Robinson (Chief Data Scientist at DataCamp) posted his data exploration of the data set on a screencast
-                     where he reproduced the graph of the highest grossing franchises.
-                     I polished Robinson's ggplot graph to more closely resemble /u/takeasecond's graph
-                     and produced a plot_ly version of the graph; these are embedded here into an web application to make
-                     it interactive using plotly and shiny. The sources are hyperlinked below.")
+        helpText("On r/dataisbeautiful, reddit user /u/takeasecond 
+                 posted a visualization on the highest grossing media franchises
+                 using data scraped from wikipedia. Following soon after,
+                 the R4DS online community posted the data set for their
+                 TidyTuesday, a weekly project aimed at making useful visualizations
+                 using ggplot, tidyr, dplyr, and other tools within the tidyverse ecosystem.
+                 David Robinson (Chief Data Scientist at DataCamp) posted his data exploration of the data set on a screencast
+                 where he reproduced the graph of the highest grossing franchises.
+                 I polished Robinson's ggplot graph to more closely resemble /u/takeasecond's graph
+                 and produced a plot_ly version of the graph; these are embedded here into an web application to make
+                 it interactive using plotly and shiny. The sources are hyperlinked below.")
         })
     output$remarks <- renderUI({
-              helpText("The first plot uses plotly::ggplotly(); ggplot's functionality with stacked barplots and its interaction with ggplotly
-                        is deprecated -- filtering the revenue categories using the legend does not push the remaining stacked bars
-                        back onto its respective axis.
+          helpText("The first plot uses plotly::ggplotly(); ggplot's functionality with stacked barplots and its interaction with ggplotly
+                    is deprecated -- filtering the revenue categories using the legend does not push the remaining stacked bars
+                    back onto its respective axis.
 
-                        The second plot uses plotly::plot_ly(), which correctly pushes the bars back
-                        onto the axis -- however, it is difficult to implement certain aesthetics, such as the total revenue text on each bar,
-                        the spacing between the axis labels and the plot, and the (black) fill within the plots to separate revenue streams. 
+                    The second plot uses plotly::plot_ly(), which correctly pushes the bars back
+                    onto the axis -- however, it is difficult to implement certain aesthetics, such as the total revenue text on each bar,
+                    the spacing between the axis labels and the plot, and the (black) fill within the plots to separate revenue streams. 
 
-                        More notably, the grammar of graphics to work between the two are different, 
-                        so it was quite the learning experience customizing them to look similar
-                        to each other. In terms of use cases with stacked barplots and plotly, ggplotly would be better suited for
-                        static  reports and plot_ly would be better suited for interactive reports.")
+                    More notably, the grammar of graphics to work between the two are different, 
+                    so it was quite the learning experience customizing them to look similar
+                    to each other. In terms of use cases with stacked barplots and plotly, ggplotly would be better suited for
+                    static  reports and plot_ly would be better suited for interactive reports.")
     })
     
     top_franchises <- reactive({
