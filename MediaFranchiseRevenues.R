@@ -85,17 +85,17 @@ server <- function(input, output) {
         })
     output$remarks <- renderUI({
       helpText("The first plot uses plotly::ggplotly(); ggplot's functionality with stacked barplots and its interaction with ggplotly
-      is deprecated -- filtering the revenue categories using the legend does not push the remaining stacked bars
-      back onto its respective axis.
+                is deprecated -- filtering the revenue categories using the legend does not push the remaining stacked bars
+                back onto its respective axis.
 
-      The second plot uses plotly::plot_ly(), which correctly pushes the bars back
-      onto the axis -- however, it is difficult to implement certain aesthetics, such as the total revenue text on each bar,
-      the spacing between the axis labels and the plot, and the (black) fill within the plots to separate revenue streams. 
+                The second plot uses plotly::plot_ly(), which correctly pushes the bars back
+                onto the axis -- however, it is difficult to implement certain aesthetics, such as the total revenue text on each bar,
+                the spacing between the axis labels and the plot, and the (black) fill within the plots to separate revenue streams. 
       
-      More notably, the grammar of graphics to work between the two are different, 
-      so it was quite the learning experience customizing them to look similar
-      to each other. In terms of use cases with stacked barplots and plotly, ggplotly would be better suited for
-               static  reports and plot_ly would be better suited for interactive reports.")
+                More notably, the grammar of graphics to work between the two are different, 
+                so it was quite the learning experience customizing them to look similar
+                to each other. In terms of use cases with stacked barplots and plotly, ggplotly would be better suited for
+                static  reports and plot_ly would be better suited for interactive reports.")
     })
     
     top_franchises <- reactive({
@@ -160,9 +160,7 @@ server <- function(input, output) {
       stackedplotly() %>% plot_ly(x = ~revenue,
                                   y = ~ franchise,
                                   color = ~revenue_category,
-                                  colors = cbPalette,
-                                  marker = list(line = list("red"),
-                                                            width = 10)) %>%
+                                  colors = cbPalette) %>%
         #add_bars(x = ~revenue, y = ~franchise, color = ~revenue_category) %>%
         layout(barmode = "stack") %>% 
         layout(paper_bgcolor='black') %>% 
