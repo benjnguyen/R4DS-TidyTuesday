@@ -9,5 +9,5 @@ On r/dataisbeautiful, reddit user /u/takeasecond posted a visualization on the h
 
 https://benjnguyen.shinyapps.io/Franchise-Shiny/
 
-A rudimentary graph was also created in Tableau -- 
-https://public.tableau.com/profile/benjamin3862#!/vizhome/MediaFranchises/Sheet1?publish=yes
+A rudimentary graph was also created in Tableau -- with some effort, it could be well-polished too.
+https://public.tableau.com/profile/benjamin3862#!/vizhome/MediaFranchisesCoordFlip/Sheet1?publish=yes
