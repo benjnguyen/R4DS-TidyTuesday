@@ -84,18 +84,18 @@ server <- function(input, output) {
                      it interactive using plotly and shiny. The sources are hyperlinked below.")
         })
     output$remarks <- renderUI({
-      helpText("The first plot uses plotly::ggplotly(); ggplot's functionality with stacked barplots and its interaction with ggplotly
-                is deprecated -- filtering the revenue categories using the legend does not push the remaining stacked bars
-                back onto its respective axis.
+              helpText("The first plot uses plotly::ggplotly(); ggplot's functionality with stacked barplots and its interaction with ggplotly
+                        is deprecated -- filtering the revenue categories using the legend does not push the remaining stacked bars
+                        back onto its respective axis.
 
-                The second plot uses plotly::plot_ly(), which correctly pushes the bars back
-                onto the axis -- however, it is difficult to implement certain aesthetics, such as the total revenue text on each bar,
-                the spacing between the axis labels and the plot, and the (black) fill within the plots to separate revenue streams. 
-      
-                More notably, the grammar of graphics to work between the two are different, 
-                so it was quite the learning experience customizing them to look similar
-                to each other. In terms of use cases with stacked barplots and plotly, ggplotly would be better suited for
-                static  reports and plot_ly would be better suited for interactive reports.")
+                        The second plot uses plotly::plot_ly(), which correctly pushes the bars back
+                        onto the axis -- however, it is difficult to implement certain aesthetics, such as the total revenue text on each bar,
+                        the spacing between the axis labels and the plot, and the (black) fill within the plots to separate revenue streams. 
+
+                        More notably, the grammar of graphics to work between the two are different, 
+                        so it was quite the learning experience customizing them to look similar
+                        to each other. In terms of use cases with stacked barplots and plotly, ggplotly would be better suited for
+                        static  reports and plot_ly would be better suited for interactive reports.")
     })
     
     top_franchises <- reactive({
