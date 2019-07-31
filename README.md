@@ -8,3 +8,6 @@
 On r/dataisbeautiful, reddit user /u/takeasecond posted a visualization on the highest grossing media franchises using data scraped from wikipedia. Following soon after, the R4DS online community posted the data set for their TidyTuesday, a weekly project aimed at making useful visualizations using ggplot, tidyr, dplyr, and other tools within the tidyverse ecosystem. David Robinson (Chief Data Scientist at DataCamp) posted his data exploration of the data set on a screencast where he reproduced the graph of the highest grossing franchises. I polished Robinson's ggplot graph to more closely resemble /u/takeasecond's graph and produced a plot_ly version of the graph; these are embedded here into an web application to make it interactive using plotly and shiny.
 
 https://benjnguyen.shinyapps.io/Franchise-Shiny/
+
+A rudimentary graph was also created in Tableau -- 
+https://public.tableau.com/profile/benjamin3862#!/vizhome/MediaFranchises/Sheet1?publish=yes
