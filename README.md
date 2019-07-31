@@ -9,12 +9,15 @@ On r/dataisbeautiful, reddit user /u/takeasecond posted a visualization on the h
 
 ### Alternative Viz (Shiny -- ggplot/plotly, Tableau)
 
+##### Shiny (ggplot/plotly)
 https://benjnguyen.shinyapps.io/Franchise-Shiny/
 
+##### Tableau
 A rudimentary graph was also created in Tableau -- with some effort, it could be well-polished too.
 
 https://public.tableau.com/profile/benjamin3862#!/vizhome/MediaFranchisesCoordFlip/Sheet1?publish=yes
 
+##### Comments on alternative viz
 Functionally, the legend filter works like ggplotly's legend filter -- which is not exactly intuitive.
 Plotly's interactive legend does what I would expect -- it collapses the stacked bars onto its respective axis.
 The plotly graph can be seen in the shiny application 'Franchise-Shiny'. 
