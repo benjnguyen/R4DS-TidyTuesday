@@ -26,7 +26,7 @@ However, in Tableau, if the 'exclude' option
 is used in the legend, it will re-calculate the graphs, filtering for the remaining revenue streams. I still have to figure that out in ggplot and plotly, but admittedly it is a very handy feature. It would have to be an event handler (i.e. observeEvent()) that finds out what revenue stream has been selected so I can filter out the revenue category from the data and reproduce the graph.
 
 
-#   2019 - April 3- Pedestrian And Bike Crash Data - Dataset (Public Safety)
+#   2019 - April 3- Pedestrian And Bike Crash Data - Dataset (Public Safety) 🚲🚶🚗
 
 # Data Source and Description
 This data was provided by the St. Paul Police Department and contains all available information relating to bike and pedestrian crashes in St. Paul. As part of its commitment to improving pedestrian and bike safety, the city of St. Paul began aggressively tracking bike and pedestrian crashes in 2016. Data comes from traditional sources such as the State of MN Police Crash Report System and police reports. It also comes from social media, community conversations, police calls (911 and non-emergency) where no report was made, and other non-traditional ways to verify that a crash occurred. By collecting this level of detail for every pedestrian and bike crash in St. Paul, we are hoping to find patterns and answers to help us reach our goal of reducing the number of crashes and improving safety for all residents and visitors of St. Paul.
