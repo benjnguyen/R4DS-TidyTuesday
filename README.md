@@ -5,9 +5,9 @@ R4DS (R for Data Science) TidyTueday is a weekly project aimed at making useful 
 # Shiny Dashboards
 These shiny dashboards may also be found in the descriptions found below; they're aggregated here to ease the trouble of finding them. 
 
-# Media Franchise Revenue https://benjnguyen.shinyapps.io/Franchise-Shiny/
+#### Media Franchise Revenue https://benjnguyen.shinyapps.io/Franchise-Shiny/
  
-# Pedestrian and Bike Crashes https://benjnguyen.shinyapps.io/ped-bike-shiny/
+#### Pedestrian and Bike Crashes https://benjnguyen.shinyapps.io/ped-bike-shiny/
 
 
 # 2019-07-02 Media Franchise Revenues 📖🎞️🕹️
