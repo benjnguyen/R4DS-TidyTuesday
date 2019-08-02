@@ -26,7 +26,7 @@ However, in Tableau, if the 'exclude' option
 is used in the legend, it will re-calculate the graphs, filtering for the remaining revenue streams. I still have to figure that out in ggplot and plotly, but admittedly it is a very handy feature. It would have to be an event handler (i.e. observeEvent()) that finds out what revenue stream has been selected so I can filter out the revenue category from the data and reproduce the graph.
 
 
-# Pedestrian And Bike Crash Data - Dataset (Public Safety)
+#   2019 - April 3- Pedestrian And Bike Crash Data - Dataset (Public Safety)
 
 # Data Source and Description
 This data was provided by the St. Paul Police Department and contains all available information relating to bike and pedestrian crashes in St. Paul. As part of its commitment to improving pedestrian and bike safety, the city of St. Paul began aggressively tracking bike and pedestrian crashes in 2016. Data comes from traditional sources such as the State of MN Police Crash Report System and police reports. It also comes from social media, community conversations, police calls (911 and non-emergency) where no report was made, and other non-traditional ways to verify that a crash occurred. By collecting this level of detail for every pedestrian and bike crash in St. Paul, we are hoping to find patterns and answers to help us reach our goal of reducing the number of crashes and improving safety for all residents and visitors of St. Paul.
@@ -45,8 +45,6 @@ Leaflet is a package in R that is comparable to arcGIS.
 * The data contains crash type, longitude, and latitude data. Using these features, I created an interactive dashboard, which can be viewed here at this *intentionally big link* (i.e. definitely check it out!):
 
 #  https://benjnguyen.shinyapps.io/ped-bike-shiny/
-
-If I were to make an extension for this application,  I would add tabs that show the data set and another tab that would allow the user to select features they would like to plot against each other that they observe from the data set tab -- done in a way to create similar visualzations that appear in the following section.
 
 # Data Exploration and Data Visualization using Tidyverse
 
@@ -157,7 +155,7 @@ The distributions appear bimodal, with most of the points aggregating around mor
 
 ## How does gender correlate with crash incidences and crash type?
 
-The data contains information about the gender of the people involved in the crashes -- for the same reason I investigated age, I would like to investigate gender. To be honest, it's just a lot of fun investigating these multi-variate distributions -- as you can tell, I've plotted many of them!
+The data contains information about the gender of the people involved in the crashes -- for the same reason I investigated age, I would like to investigate gender.
 
 ![Rplot-gender](https://user-images.githubusercontent.com/35606112/60137370-4c11ae00-976c-11e9-9d9d-e71a94e38de5.png)
 
