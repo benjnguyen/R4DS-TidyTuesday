@@ -2,7 +2,10 @@
 
 R4DS (R for Data Science) TidyTueday is a weekly project aimed at making useful visualizations using ggplot, tidyr, dplyr, and other tools within the tidyverse ecosystem. This repository contains visualizations that I have worked on that I think are 1) worth sharing and 2) as a way to see the progress I have made with graphical representation of data in plots and dashboards.
 
-# 
+# Shiny Dashboards
+#  https://benjnguyen.shinyapps.io/Franchise-Shiny/
+#  https://benjnguyen.shinyapps.io/ped-bike-shiny/
+
 
 # 2019-07-02 Media Franchise Revenues 📖🎞️🕹️
 ![media_franchises](https://user-images.githubusercontent.com/35606112/62182308-c27d6f00-b31b-11e9-9db3-31674d29c5bb.png)
